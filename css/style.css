@@ -1,6 +1,7 @@
 body {
   background-color: #e4f1fe;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b2d4d;
 }
 
 h1 {
@@ -19,7 +20,7 @@ select {
   display: block;
   width: 100%;
   font-size: 18px;
-  border: 1px solid rgb(141, 197, 255);
+  border: 1px solid rgb(36, 113, 195);
   border-radius: 4px;
   padding: 10px;
 }
@@ -27,9 +28,10 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
+  margin-bottom: 30px;
   background: white;
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(124, 166, 211, 0.8) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
@@ -38,7 +40,7 @@ select {
   margin: 10px 0;
   justify-content: space-between;
   padding: 30px 0;
-  border-bottom: 1px dashed rgb(141, 197, 255);
+  border-bottom: 1px dashed rgb(36, 113, 195);
 }
 
 .city:last-child {
@@ -46,7 +48,7 @@ select {
 }
 
 .date {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .time {
@@ -63,5 +65,14 @@ select {
 footer {
   text-align: center;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #0b2d4d;
+}
+
+.link{
+    color: #005bb1;
+    text-decoration: none;
+}
+
+.link:hover{
+    font-weight: bold;
 }

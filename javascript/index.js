@@ -24,6 +24,32 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Bogota
+  let bogotaElement = document.querySelector("#bogota");
+  if (bogotaElement) {
+    let bogotaDateElement = bogotaElement.querySelector(".date");
+    let bogotaTimeElement = bogotaElement.querySelector(".time");
+    let bogotaTime = moment().tz("America/Bogota");
+
+    bogotaDateElement.innerHTML = bogotaTime.format("MMMM	Do YYYY");
+    bogotaTimeElement.innerHTML = bogotaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Cairo
+  let cairoElement = document.querySelector("#cairo");
+  if (cairoElement) {
+    let cairoDateElement = cairoElement.querySelector(".date");
+    let cairoTimeElement = cairoElement.querySelector(".time");
+    let cairoTime = moment().tz("Africa/Cairo");
+
+    cairoDateElement.innerHTML = cairoTime.format("MMMM	Do YYYY");
+    cairoTimeElement.innerHTML = cairoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -44,7 +70,9 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+  <a href="/" class="link">All cities</a>
   `;
+  
 }
 
 updateTime();
